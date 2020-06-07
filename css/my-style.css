@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PoppinsMeduim;
+    src: url(../fonts/Poppins-Medium.ttf);
+    
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: PoppinsBold;
+    src: url(../fonts/Poppins-Bold.ttf);
+    font-weight: 500;
+  }
+
+
+
+  /* NavBar */
+  .navbar-brand {
+      height: 50px;
+      width: 150px;
+      background-image: url(../images/logo.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .nav-item a ,.navB1 , .navB2 ,.headerB1{
+      font-family: PoppinsBold ;
+      font-size: 12px !important;
+  }
+
+  .navB1 {
+      opacity: .5;
+  }
+
+  .navB1:hover{
+      opacity: 1;
+  }
+
+  .navB2,.headerB1,.shortenBtn{
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 50px;
+   
+  }
+
+  .navB2:hover , .headerB1:hover{
+      color: white !important;
+      opacity: .5;
+  }
+
+  /* Header Section */
+  .headerInfo{
+    font-family: PoppinsBold;
+  }
+  .headerInfo h1{
+      
+      font-size: 60px;
+  }
+
+  .headerInfo p{
+      
+    font-size: 18px;
+    opacity: .5;
+  }
+
+  .headerB1{
+      font-size: 14px !important;
+  }
+
+  
+
+  .headerImage div {
+      height: 100%;
+      background-image: url(../images/illustration-working.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+  }
+  /* shortbox section */
+  .shortBoxSection{
+    position: relative;
+  }
+  .shortBox{
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; 
+    border-radius: 10px;
+    position: relative;
+    z-index: 99999999999;
+  }
+
+  .shortBox .row{
+    background-color: rgba(59, 48, 84, .7);
+    border-radius: 10px;
+  }
+
+  /* To Change Color OF Form Box Shadow */
+
+.form-control:focus {
+    border-color: hsl(0, 87%, 67%);
+    box-shadow: 0 0 0 0.2rem hsl(0, 87%, 67%);
+} 
+
+#message{
+    color:hsl(0, 87%, 67%);
+}
+
+  .shortenBtn{
+      border-radius: 5px;
+  }
+
+  .shortenBtn:hover{
+    color: white !important;
+    opacity: .7;
+  }
+  .shape{
+      height: 50%;
+      background-color: rgba(191, 191, 191, .3);
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+  }
+
+  
+  
+  /* advanced Section */
+  .links{
+      display: none ;
+  }
+
+  .link{
+      background-color: white;
+      border-radius: 10px;
+  }
+
+  .link h6{
+    font-family: PoppinsBold;
+    font-size: 16px;
+  }
+
+  .link span {
+    font-family: PoppinsMeduim;
+  }
+
+  .link span:hover{
+      cursor: pointer;
+      color: hsl(180, 66%, 49%);
+  }
+  .copyBtn{
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 5px;
+    padding: 3px 15px;
+   
+  }
+  .copyBtn:hover{
+    color: white !important;
+    opacity: .5;
+    }
+ 
+  .advanced{
+      background-color: rgba(191, 191, 191, .3);
+      text-align: center;
+      padding-bottom: 100px;
+  }
+
+  .advancedTitle{
+      width: 33%;
+      margin: auto;
+  }
+
+  .advanced .advancedTitle h2{
+    font-family: PoppinsBold;
+    font-size: 26 !important;
+  }
+  .advanced .advancedTitle small{
+    font-family: PoppinsMeduim;
+    opacity: .5;
+    width: 100%;
+  }
+
+  .advancedContent .cardOne , .advancedContent .cardTwo{
+      margin-right: 30px;
+      position: relative;
+  }
+
+  .advancedContent .cardTwo .card{
+      margin-top: 30px;
+  }
+
+  .advancedContent .cardThree .card{
+    margin-top: 60px;
+}
+  
+
+  .advancedContent .cardOne::after , .advancedContent .cardTwo::after{
+      content: '';
+      width: 30px;
+      height: 5px;
+      background-color: hsl(180, 66%, 49%);
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      
+  }
+
+  .advanced .card{
+      background-color: white;
+      border: 0;
+      border-radius: 10px;
+      padding: 40px 20px 20px;
+      text-align: left;
+      position: relative;
+  }
+
+  .advanced .card h6{
+      font-family: PoppinsBold ;
+      color: hsl(257, 27%, 26%);
+  }
+  .advanced .card small{
+    font-family: PoppinsMeduim ;
+    opacity: .5;
+  }
+
+  .advanced .card .cardImage{
+      overflow: hidden;
+      background-color: hsl(257, 27%, 26%);
+      height: 50px;
+      width: 20%;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 10%;
+      top: -25px;
+  }
+  .advanced .card .cardImage .image{
+      height: 50%;
+      width: 50%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      margin: auto;
+  }
+
+  .advanced .card .cardImage .image1{
+   
+    background-image: url(../images/icon-brand-recognition.svg);  
+  }
+
+  .advanced .card .cardImage .image2{
+   
+    background-image: url(../images/icon-detailed-records.svg);  
+  }
+
+  .advanced .card .cardImage .image3{
+   
+    background-image: url(../images/icon-fully-customizable.svg);  
+  }
+
+
+  .boost{
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    height: 150px;
+  }
+
+  .content{
+      background-color: rgba(59, 48, 84, .7);
+      top: 0;
+      bottom: 0;
+      left: 0 ;
+      right: 0;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .boost h2{
+    font-family: PoppinsBold ;
+    color: White;
+  }
+
+
+  /* Footer */
+
+  .footer{
+      background-color: hsl(260, 8%, 14%);
+  }
+  .footerCol ul{
+      list-style: none;
+  }
+  .footerCol ul li {
+      color: white;
+      font-size: 12px;
+      margin-bottom: 5px;
+      opacity: .5;
+      font-family: PoppinsMeduim;
+  }
+
+  .footerCol ul li:hover{
+      color: hsl(180, 66%, 49%);
+      opacity: 1;
+      cursor: pointer;
+  }
+
+ .social i {
+     color: white;
+     margin: 7px;
+     cursor: pointer;
+ }
+
+ .social i:hover{
+     color: hsl(180, 66%, 49%);;
+ }
+
+
+  /* styles for mobiles */
+  @media (max-width: 768px) {
+   /* Nav Bar */
+   .navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+   }
+   .navbar-collapse{
+       text-align: center;
+       background-color: hsl(257, 27%, 26%) !important;
+       padding: 35px;
+       border-radius: 20px;   
+   }
+
+   .nav-item a {
+    color: white !important ;
+    font-size: 16px !important;
+   }
+   .navB1{
+       font-size: 16px !important;
+       color: white !important;
+       display: block;
+       opacity: 1;
+       margin: auto;
+       width: 90%;
+   }
+
+   .navB2{
+       font-size: 16px !important;
+       width: 90%;
+       margin: auto;
+   }
+
+   /* header section */
+   .header{
+       margin-top: 100px;
+   }
+   .headerInfo{
+       text-align: center;
+   }
+   .headerInfo h1{
+   
+    font-size: 30px;
+    }
+
+    .headerInfo p{
+    
+        font-size: 14px;
+        opacity: .5;
+    }
+
+    .headerB1{
+        font-size: 12px !important;
+    }
+
+    .headerImage {
+        height: 200px;
+    }
+
+    /* short section */
+
+    .shortBox{
+        width: 90%;
+        background-image: url(../images/bg-shorten-mobile.svg);
+    }
+
+    /* Advanced Section */
+    .link{
+        width: 90%;
+        margin: auto;
+    }
+    .advanced{
+        padding-top: 50px;
+    }
+
+    .advanced .card{
+        text-align: center;
+    }
+
+    .advancedTitle{
+        width: 95%;
+        margin: auto;
+    }
+    
+
+    .advancedContent .cardOne , .advancedContent .cardTwo{
+        margin-right: 0px;
+        margin-bottom: 55px;
+        
+    }
+  
+    .advancedContent .cardTwo .card{
+        margin-top: 0px;
+    }
+  
+    .advancedContent .cardThree .card{
+      margin-top: 0px;
+  }
+    
+  
+    .advancedContent .cardOne::after , .advancedContent .cardTwo::after{
+        width: 2%;
+        height: 55px;
+        right: 49%;
+        top: 100%;
+        
+    }
+    .advanced .card .cardImage{
+       
+        left: 40%;
+        
+    }
+
+    /* boost section*/
+    .boost{
+        background-image: url(../images/bg-boost-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        position: relative;
+        
+      }
+
+      .boost h2{
+        font-size: 24px;
+      }
+
+  }
